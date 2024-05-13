@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .text h1 {
+        -webkit-text-stroke: 1px black;
+        color: transparent;
+        font-weight: 500;
+        text-transform: capitalize;
+        font-size: 7.5vw;
+      }
+      ::selection {
+        background-color: transparent;
+        color: rgb(6, 109, 157);
+      }
+      .featured h1:nth-child(2) {
+        -webkit-text-stroke: 1px black;
+        color: transparent;
+        font-weight: 500;
+        text-transform: capitalize;
+      }
+      .elem {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        height: inherit;
+      }
+      .text2 {
+        flex-shrink: 0;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+
+      .btn:link,
+.btn:visited {
+ text-transform: uppercase;
+ text-decoration: none;
+ color: rgb(27, 27, 27);
+ padding: 10px 30px;
+ border: 1px solid;
+ border-radius: 1000px;
+ display: inline-block;
+ transition: all .2s;
+ position: relative;
+}
+
+.btn:active {
+ transform: translateY(-5px);
+ box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+}
+
+.btn:active {
+ transform: translateY(-3px);
+}
+
+.btn::after {
+ content: "";
+ display: inline-block;
+ height: 100%;
+ width: 100%;
+ border-radius: 100px;
+ top: 0;
+ left: 0;
+ position: absolute;
+ z-index: -1;
+ transition: all .3s;
+}
+
+.btn:hover::after {
+ background-color: rgb(0, 238, 255);
+ transform: scaleX(1.4) scaleY(1.5);
+ opacity: 0;
+}
+    </style>
+  </head>
+  <body>
+    <div class="main w-full font-[gilroy]">
+      <div class="nav w-full flex items-center justify-between lg:px-5 pr-5">
+        <div class="left">
+          <img
+            class="magnet w-[100px]"
+            src="https://imgs.search.brave.com/sxdXIJUBRyEFMDto0AoIztwEQPRu8lB3dV1cMaeg93U/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9icmFu/ZGl0ZWNodHVyZS5h/Z2VuY3kvYnJhbmQt/bG9nb3Mvd3AtY29u/dGVudC91cGxvYWRz/L3dwZG0tY2FjaGUv/Q3ViZXJ0by05MDB4/MC5wbmc"
+            alt=""
+          />
+        </div>
+        <div class="right flex gap-5 font-medium text-lg">
+          <a href="#">our showreel</a>
+          <a href="#">menu</a>
+          <i class="magnet ri-menu-line"></i>
+        </div>
+      </div>
+      <div class="center w-full lg:w-[88vw] lg:mx-auto mt-10 lg:mt-40 px-3">
+        <p class="text-xs lg:text-lg font-semibold">We make it happen</p>
+        <div class="text flex gap-5">
+          <h1 class="anime">websites</h1>
+          <h1 class="anime">apps</h1>
+          <h1 class="anime">brandings</h1>
+        </div>
+      </div>
+      <p
+        class="w-[95vw] lg:w-[45vw] mt-40 ml-5 lg:mt-60 lg:ml-[6vw] text-xs lg:text-lg font-semibold"
+      >
+        Leading digital agency with solid design and development expertise.We
+        build readymade websites,mobile applications,and elaborate online
+        business services.
+      </p>
+      <div class="featured lg:text-6xl text-3xl mt-10 lg:mt-40 ml-[6vw]">
+        <h1>featured</h1>
+        <h1>projects</h1>
+      </div>
+      <div class="scroll w-[90vw] mx-auto mt-10 h-screen flex">
+        <div class="left w-[45vw]">
+          <div class="elem w-[45vw] h-screen relative">
+            <div class="text2 py-60 px-5 h-screen flex flex-col gap-5 w-[30vw]">
+              <h3 class="text-lg font-medium">Riyadh</h3>
+              <h1 class="text-4xl font-medium">
+                official website of riyadh, saudi arabia's capital.
+              </h1>
+              <h4 class="font-medium text-gray-400">
+                design, development, product
+              </h4>
+            </div>
+            <div class="text2 flex py-60 px-5 flex-col h-screen gap-5 w-[30vw]">
+              <h3 class="text-lg font-medium">Riyadh</h3>
+              <h1 class="text-4xl font-medium">
+                official website of riyadh, saudi arabia's capital.
+              </h1>
+              <h4 class="font-medium text-gray-400">
+                design, development, product
+              </h4>
+            </div>
+            <div class="text2 flex py-60 px-5 flex-col h-screen gap-5 w-[30vw]">
+              <h3 class="text-lg font-medium">Riyadh</h3>
+              <h1 class="text-4xl font-medium">
+                official website of riyadh, saudi arabia's capital.
+              </h1>
+              <h4 class="font-medium text-gray-400">
+                design, development, product
+              </h4>
+            </div>
+            <div class="text2 last flex py-60 px-5 flex-col h-screen gap-5 w-[30vw]">
+              <h3 class="text-lg font-medium">Riyadh</h3>
+              <h1 class="text-4xl font-medium">
+                official website of riyadh, saudi arabia's capital.
+              </h1>
+              <h4 class="font-medium text-gray-400">
+                design, development, product
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="right w-[45vw]  h-screen ">
+          <div class="images w-[40vw] overflow-hidden h-screen">
+            <img class="h-full object-cover" src="./assets/img1-2.jpg" alt="" />
+            <img  src="./assets/img2-2.jpg" alt="">
+            <img  src="./assets/img3-1.jpg" alt="">
+            <img  src="./assets/img4-1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn magnet mt-20 ml-[45vw] text-sm  font-light ">view all products</a>
+      <div class="div w-full h-screen"></div>
+    </div>
+
+<!--  Gsap is needed for Basic Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- Scroll Trigger is needed for Scroll Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+<!-- ControlKit is needed for Debug Panel -->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+<!-- shery js cdn -->
+    <script  type="text/javascript"  src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
